@@ -5,9 +5,9 @@ using UnityEngine;
 public class explode : MonoBehaviour
 {
     public GameObject explosion;
-
     private Rigidbody2D rb;
     private float stopPlace;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +25,6 @@ public class explode : MonoBehaviour
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+        //(Vector2.Distance(transform.position, player.position)
     }
 }

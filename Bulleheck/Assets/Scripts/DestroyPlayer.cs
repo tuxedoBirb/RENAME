@@ -5,15 +5,11 @@ using UnityEngine;
 public class DestroyPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag != "ignore")
         {
             Destroy(gameObject);
-            if (collision.gameObject.tag == "player")
-            {
-                Destroy(collision.gameObject);
-            }
         }
     }
 }

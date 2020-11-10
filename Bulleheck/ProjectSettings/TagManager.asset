@@ -7,6 +7,8 @@ TagManager:
   - enemy
   - player
   - ignore
+  - border
+  - doesDamage
   layers:
   - Default
   - TransparentFX
@@ -43,4 +45,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 3206483247
+    locked: 0
+  - name: sprites
+    uniqueID: 2202987619
+    locked: 0
+  - name: bullets
+    uniqueID: 1912565765
+    locked: 0
+  - name: ISWEAR
+    uniqueID: 3285085881
     locked: 0
